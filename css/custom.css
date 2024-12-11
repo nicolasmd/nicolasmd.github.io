@@ -1,0 +1,11 @@
+.tooltip-inner {
+    max-width: 250px;
+    min-width: 120px; 
+}
+.list-inline.dev-icons > .list-inline-item > a {
+    color: inherit;
+}
+.list-inline.dev-icons > .list-inline-item > a:hover {
+    transition: all 0.3s;
+    color: var(--bs-link-hover-color);
+}
