@@ -32,12 +32,12 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 });
 
-
+// Activate tooltips globally
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 });
-
+// Parse tooltips to replace {xstars} syntax by font awesome circles
 $('[data-bs-toggle="tooltip"]').each(function (index) {
     const originalTitle = $(this).attr('data-bs-original-title');
     const search = /\{([1-5])(stars)\}/;
@@ -49,5 +49,4 @@ $('[data-bs-toggle="tooltip"]').each(function (index) {
         replace += '</div>'
         $(this).attr('data-bs-original-title', originalTitle.replace(match[0], replace));
     }
-    
 });

@@ -1,11 +1,20 @@
 .tooltip-inner {
     max-width: 250px;
-    min-width: 120px; 
+    min-width: 120px;
 }
-.list-inline.dev-icons > .list-inline-item > a {
+.list-inline.dev-icons > .list-inline-item > a, .modal-body a  {
     color: inherit;
 }
-.list-inline.dev-icons > .list-inline-item > a:hover {
+.list-inline.dev-icons > .list-inline-item > a:hover, .modal-body a:hover {
     transition: all 0.3s;
     color: var(--bs-link-hover-color);
+}
+.carousel img {
+    height: 300px;
+    width: 540px;
+    object-fit: contain;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
 }
